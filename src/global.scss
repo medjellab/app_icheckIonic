@@ -9,6 +9,8 @@
  * https://ionicframework.com/docs/layout/global-stylesheets
  */
 
+$material-icons-font-path: "~material-icons/iconfont/";
+
 /* Core CSS required for Ionic components to work properly */
 @import "~@ionic/angular/css/core.css";
 
@@ -16,7 +18,7 @@
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
-@import '~@ionic/angular/css/display.css';
+@import "~@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
 @import "~@ionic/angular/css/padding.css";
@@ -24,3 +26,176 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~material-icons/iconfont/material-icons.scss";
+
+@import "~bootstrap/scss/_functions";
+@import "~bootstrap/scss/_variables";
+@import "~bootstrap/scss/bootstrap";
+
+ion-header ion-toolbar {
+  // background-color: #f5cd1b !important;
+  // --background: rgb(0, 110, 130);
+  // ion-title {
+  //   color: white;
+  // }
+  border: 0;
+  font-size: 16px;
+  border-radius: 0;
+  min-height: 50px;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 5px 15px;
+}
+
+ion-menu {
+  ion-content {
+    ion-list {
+      background-color: rgb(0, 110, 130);
+      ion-item {
+        // --background: rgb(0,110,130);
+        // --border-style: none;
+        --background-hover: rgb(0, 110, 130);
+      }
+    }
+    // --background: rgb(199, 238, 245);
+  }
+}
+
+.split-pane-side {
+  // max-width: 80% !important;
+  min-width: 80% !important;
+  max-width: inherit;
+}
+
+.split-pane-md.split-pane-visible > .split-pane-side {
+  max-width: 22% !important;
+}
+
+// ion-content {
+//   --ion-background-color: #eee;
+// }
+
+@media (max-width: 991px) {
+  .navbar-toggler span.icon-bar {
+    display: block;
+    position: relative;
+    background:  rgb(0, 110, 130) !important;
+    width: 24px;
+    height: 2px;
+    border-radius: 1px;
+    // margin-top: 15px;
+    margin: 9px 0px 0px 0px;
+  }
+}
+
+@media (max-width: 991px) {
+  .sidebar::before,
+  off-canvas-sidebar nav .navbar-collapse::before {
+    background-color: inherit !important;
+  }
+}
+
+.mat-horizontal-stepper-header {
+  pointer-events: none !important;
+}
+
+.btnFloatRight {
+  float: right;
+  background-color: rgb(0, 110, 130);
+}
+
+.btnFloatLeft {
+  float: left;
+}
+table {
+  width: 90%;
+  // margin-top: 2%;
+  margin: auto;
+}
+
+.mat-cell,
+.mat-header-cell {
+  text-align: center;
+  // border-right: 0.5px solid rgb(78, 76, 48);
+}
+
+th.mat-header-cell {
+  text-align: center !important;
+}
+
+/*table th {
+    background-color: #f5cd1b;
+    // border-color: rgb(78, 76, 48);
+  }*/
+
+.btnSize {
+  width: 7%;
+}
+
+ion-content .mdl-toolbar {
+  .logo ion-title {
+    color: rgb(0, 110, 130);
+    white-space: nowrap;
+    font-weight: 400px;
+    font-size: 19px;
+    line-height: 30px;
+  }
+  // background: linear-gradient(rgb(0, 110, 130), rgba(0, 110, 130, 0.8));
+  background: linear-gradient(rgb(249, 253, 253), rgba(232, 234, 235, 0.8));
+  border: 0;
+  // font-size: 16px;
+  border-radius: 0;
+  min-height: 50px;
+  // background-color: #006e828f;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 5px 15px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  background: #fff;
+  box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56),
+    0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  width: 272px !important;
+}
+
+.sidebar .sidebar-wrapper {
+  position: relative;
+  height: calc(100vh - 75px);
+  overflow: auto;
+  width: 270px !important;
+  z-index: 4;
+  padding-bottom: 30px;
+}
+
+.aclass ngx-qrcode div img {
+  margin-right: auto;
+  margin-left: 20%;
+  width: 250px !important;
+  height: 250px !important;
+}
+
+@media (max-width: 1200px) {
+  .aclass ngx-qrcode div img {
+    margin-right: auto;
+    margin-left: 3%;
+    width: 250px !important;
+    height: 250px !important;
+  }
+}
+
+/*@media print {
+    .aclass ngx-qrcode div img {
+      margin-right: auto;
+      margin-left: auto;
+      width: 30% !important;
+      height: 30% !important;
+    }
+  }*/
